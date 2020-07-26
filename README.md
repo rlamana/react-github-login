@@ -80,6 +80,12 @@ Callback for successful login. An object will be passed as an argument to the ca
 
 Callback for errors raised during login.
 
+#### `disabled`
+
+`{bool}`
+
+Disable login button.
+
 
 ## Development
 
