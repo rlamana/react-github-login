@@ -1,6 +1,6 @@
 {
-  "name": "react-github-login",
-  "version": "1.0.3",
+  "name": "react-login-github",
+  "version": "1.0.4",
   "description": "A React Component for GitHub Login",
   "main": "dist/GitHubLogin.js",
   "scripts": {
@@ -11,19 +11,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/checkr/react-github-login.git"
+    "url": "https://github.com/rlamana/react-login-github.git"
   },
   "keywords": [
     "react",
     "reactjs",
     "react-component",
+    "login",
+    "github",
     "github-login",
     "react-github-login"
   ],
   "license": "MIT",
   "peerDependencies": {
     "prop-types": "^15.5.10",
-    "react": "^15.6.1"
+    "react": "^16.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
