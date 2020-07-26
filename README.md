@@ -1,4 +1,4 @@
-This is a forked of [react-github-login](https://github.com/checkr/react-github-login) since the project seems to be abandoned. This fork includes:
+This is a fork of [react-github-login](https://github.com/checkr/react-github-login) since the project seems to be abandoned. This fork includes:
 
 - Updated React dependency > 16.0.0.
 - Popup custom position.
