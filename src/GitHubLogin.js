@@ -17,6 +17,7 @@ class GitHubLogin extends Component {
     popupWidth: PropTypes.number,
     redirectUri: PropTypes.string,
     scope: PropTypes.string,
+    disabled: PropTypes.bool
   }
 
   static defaultProps = {
@@ -40,15 +41,15 @@ class GitHubLogin extends Component {
 
     let top = window.screen.height - popupHeight;
     top = top > 0 ? top / 2 : 0;
-            
+
     let left = window.screen.width - popupWidth;
     left = left > 0 ? left / 2 : 0;
 
     const popup = this.popup = PopupWindow.open(
       'github-oauth-authorize',
       `https://github.com/login/oauth/authorize?${search}`,
-      { 
-        height: popupHeight, 
+      {
+        height: popupHeight,
         width: popupWidth,
         top: top,
         left: left
@@ -79,13 +80,12 @@ class GitHubLogin extends Component {
   }
 
   render() {
-    const { className, buttonText, children } = this.props;
-    const attrs = { onClick: this.onBtnClick };
-
-    if (className) {
-      attrs.className = className;
-    }
-
+    const { className, buttonText, children, disabled } = this.props;
+    const attrs = {
+      onClick: this.onBtnClick,
+      className: className || '',
+      disabled = disabled || false
+    };
     return <button {...attrs}>{ children || buttonText }</button>;
   }
 }
