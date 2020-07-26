@@ -1,6 +1,6 @@
 This is a fork of [react-github-login](https://github.com/checkr/react-github-login) since the project seems to be abandoned. This fork includes:
 
-- Updated React dependency > 16.0.0.
+- Updated React > 16.0.0 and all other dependencies.
 - Popup custom position.
 - Popup auto-center by default.
 - Disable button property.
