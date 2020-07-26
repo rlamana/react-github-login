@@ -1,12 +1,12 @@
 import React from 'react';
-import GitHubLogin from '../GitHubLogin.js';
+import LoginGithub from '../LoginGithub.js';
 import PopupWindow from '../PopupWindow.js';
 import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
 
 test('Renders defaults', () => {
   const component = renderer.create(
-    <GitHubLogin clientId="foo" redirectUri="http://foo.test/auth/github"/>
+    <LoginGithub clientId="foo" redirectUri="http://foo.test/auth/github"/>
   );
   let tree = component.toJSON();
 
@@ -15,7 +15,7 @@ test('Renders defaults', () => {
 
 test('Renders with `className`', () => {
   const component = renderer.create(
-    <GitHubLogin clientId="foo" redirectUri="http://foo.test/auth/github" className="foobar"/>
+    <LoginGithub clientId="foo" redirectUri="http://foo.test/auth/github" className="foobar"/>
   );
   let tree = component.toJSON();
 
@@ -24,7 +24,7 @@ test('Renders with `className`', () => {
 
 test('Renders with `buttonText`', () => {
   const component = renderer.create(
-    <GitHubLogin clientId="foo" redirectUri="http://foo.test/auth/github" buttonText="Foo"/>
+    <LoginGithub clientId="foo" redirectUri="http://foo.test/auth/github" buttonText="Foo"/>
   );
   let tree = component.toJSON();
 
@@ -36,7 +36,7 @@ test('Opens OAuth dialog', () => {
   const redirectUri = 'http://foo.test/auth/github';
 
   const component = (
-    <GitHubLogin clientId={clientId} redirectUri={redirectUri}/>
+    <LoginGithub clientId={clientId} redirectUri={redirectUri}/>
   );
   const wrapper = shallow(component);
 

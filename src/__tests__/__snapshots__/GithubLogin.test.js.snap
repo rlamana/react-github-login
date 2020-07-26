@@ -2,6 +2,8 @@
 
 exports[`Renders defaults 1`] = `
 <button
+  className=""
+  disabled={false}
   onClick={[Function]}
 >
   Sign in with GitHub
@@ -10,6 +12,8 @@ exports[`Renders defaults 1`] = `
 
 exports[`Renders with \`buttonText\` 1`] = `
 <button
+  className=""
+  disabled={false}
   onClick={[Function]}
 >
   Foo
@@ -19,6 +23,7 @@ exports[`Renders with \`buttonText\` 1`] = `
 exports[`Renders with \`className\` 1`] = `
 <button
   className="foobar"
+  disabled={false}
   onClick={[Function]}
 >
   Sign in with GitHub

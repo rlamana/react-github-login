@@ -1,3 +1,3 @@
-import GitHubLogin from './GitHubLogin';
+import LoginGithub from './LoginGithub';
 
-export default GitHubLogin;
+export default LoginGithub;

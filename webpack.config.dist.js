@@ -8,9 +8,9 @@ module.exports = {
   ],
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'GitHubLogin.js',
+    filename: 'LoginGithub.js',
     libraryTarget: 'umd',
-    library: 'GitHubLogin'
+    library: 'LoginGithub'
   },
   module: {
     rules: [{
