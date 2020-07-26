@@ -14,6 +14,21 @@ React component for [GitHub Login](https://developer.github.com/v3/oauth/).
 
 ## Usage
 
+The easiest way to use react-login-github is to install it from npm and build it into your app with webpack:
+
+```
+yarn add react-login-github
+```
+
+or using npm:
+
+```
+npm install react-login-github --save
+```
+
+Then use it in your app:
+
+
 ```js
 import React from 'react';
 import ReactDOM from 'react-dom';
