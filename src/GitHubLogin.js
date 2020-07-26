@@ -84,7 +84,7 @@ class GitHubLogin extends Component {
     const attrs = {
       onClick: this.onBtnClick,
       className: className || '',
-      disabled = disabled || false
+      disabled: disabled || false
     };
     return <button {...attrs}>{ children || buttonText }</button>;
   }
